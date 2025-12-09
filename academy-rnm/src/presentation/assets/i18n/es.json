@@ -1,0 +1,63 @@
+{
+  "title_home_page": "Rick y Morty",
+  "searchbar_placeholder": "Busca por personajes, episodios...",
+  "title_characters": "Personajes",
+  "character":{
+    "location": "Localización",
+    "species": "Especie",
+    "gender": "Género",
+    "status": "Estado",
+    "episode": "Episode"
+  },
+  "characters_status":{
+    "status_alive": "Alive",
+    "status_dead": "Dead",
+    "status_unknown": "Unknown"
+  },
+  "components_title.menu_language": "Idiomas",
+  "components_title_characters_favorites": "Favoritos",
+  "languages": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "message_character_not_found": "Personaje no encontrado",
+  "message_loading_characters": "Cargando...",
+  "message_toast_update_character": "Se ha actualizado el personaje",
+  "chip_all_characters": "Todos",
+  "close_modal_button": "Cerrar",
+  "login_page_form":{
+    "input_user_name": {
+      "label_input_user_name": "Usuario",
+      "placeholder_input_user_name": "Introduce nombre de usuario",
+      "error_text_input_user_name": "Usuario invalido"
+    },
+    "input_password":{
+      "label_input_password": "Contraseña",
+      "placeholder_input_password": "Introduce tu contraseña",
+      "error_text_input_password": "Contraseña invalido"
+    },
+    "button_submit": "Inicia sesión"
+  },
+  "login_page_alert": {
+    "alert":{
+      "header": "Error",
+      "message": "Usuario y/o constraseña incorrectas",
+      "text_button": "OK"
+    }
+  },
+  "tabs":{
+    "title_home_tab": "Home",
+    "title_user_profile_tab": "Perfil"
+  },
+  "user_profile_page":{
+    "page_title": "Perfil",
+    "profile_options": {
+      "user_data": {
+        "label": "Mi Cuenta",
+        "note": "Mira tus datos personales"
+      },
+      "biometric_auth": "Face ID /Toach ID",
+      "log_out": "Cerrar sesión"
+    }
+  }
+}

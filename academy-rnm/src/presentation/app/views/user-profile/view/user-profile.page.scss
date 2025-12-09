@@ -1,0 +1,10 @@
+.image-avatar::part(image){
+  @apply w-[3.75rem];
+  @apply h-[3.75rem];
+}
+
+.image-avatar{
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+}

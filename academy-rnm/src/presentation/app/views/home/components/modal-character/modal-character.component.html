@@ -1,0 +1,52 @@
+<ion-content>
+  <ion-card class="bg-white rounded-[2.5rem] h-auto m-0 shadow-xl">
+    <div>
+      <div class="flex justify-between">
+        @if(item.status === 'Alive'){
+          <ion-chip class="absolute left-4 top-4 shadow-2xl bg-green-300 ">
+            <ion-avatar class="bg-white" >
+              <ion-img [src]="statusAlive" class="flex justify-center items-center imgStatus"></ion-img>
+            </ion-avatar>
+            <ion-label class="font-bold text-green-800">{{item.status}}</ion-label>
+          </ion-chip>
+        }@else if (item.status === 'Dead') {
+          <ion-chip class="absolute left-4 top-4 shadow-2xl bg-red-300 ">
+            <ion-avatar class="bg-white flex justify-center items-center">
+              <ion-img [src]="statusDead" class="flex justify-center items-center imgStatus"></ion-img>
+            </ion-avatar>
+            <ion-label class="font-bold text-red-800">{{item.status}}</ion-label>
+          </ion-chip>
+        }@else if (item.status === 'unknown') {
+          <ion-chip class="absolute left-4 top-4 shadow-2xl bg-blue-300 ">
+            <ion-avatar class="bg-white flex justify-center items-center">
+              <ion-img [src]="statusUnknown" class="flex justify-center items-center imgStatus"></ion-img>
+            </ion-avatar>
+            <ion-label class="font-bold text-blue-800">{{item.status}}</ion-label>
+          </ion-chip>
+        }
+        <ion-chip class="absolute right-4 top-4 bg-grey-300" (click)="closeModal()">
+          <ion-label class="font-medium text-grey-950">{{'close_modal_button'| translate}}</ion-label>
+        </ion-chip>
+      </div>
+      <ion-img [src]="item.image" class="h-96 object-cover radius-img-modal"></ion-img>
+    </div>
+
+    <div>
+      <div class="mt-2 mx-4 flex justify-between">
+        <ion-label class="font-bold text-xl text-black-title-rnm-and-title-card self-center">{{ item.name }}</ion-label>
+        <ion-button class="button-favorite" (click)="changeCharacterFavorite()">
+          @if(isFavorite){
+            <ion-icon name="heart" size="large" color="danger"></ion-icon>
+          }@else {
+            <ion-icon name="heart-outline" size="large" color="danger"></ion-icon>
+          }
+        </ion-button>
+      </div>
+      <div class="flex mx-4 mb-4 mt-1">
+        <ion-label class="bg-orange-300 rounded-full px-2 py-0.5 font-medium text-orange-800">{{ item.species }}</ion-label>
+        <ion-label class="ml-5 bg-violet-300 rounded-full px-2 py-0.5 font-medium text-violet-800">{{ item.gender }}</ion-label>
+        <ion-label class="ml-5 bg-pink-300 rounded-full px-2 py-0.5 font-medium text-pink-800">{{ "character.episode" | translate }}: {{ episode }}</ion-label>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-black-title-rnm-and-title-card">{{'components_title_characters_favorites' | translate}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()" color="primary">{{'close_modal_button' | translate}}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-white">
+  @if(item.length > 0){
+    @for (character of item; track $index) {
+      <ion-card class="bg-white shadow-none my-0 mx-4">
+        <div class="flex">
+          <div class="py-3 flex">
+              <ion-img src="{{character.image}}" class="image-character object-cover h-24 w-16"></ion-img>
+            <div class="pl-4 w-64 content-center">
+              <ion-card-title class="text-black-title-rnm-and-title-card text-base font-medium">{{character.name}}</ion-card-title>
+              <ion-card-subtitle class="text-blue-text-subtitle-card text-sm">{{'character.location' | translate}}: {{character.location.name}}</ion-card-subtitle>
+              <ion-label>{{character.species}}</ion-label>
+            </div>
+          </div>
+          <div class="relative flex justify-center items-center">
+            @if(character.status === "Alive"){
+              <ion-img [src]="statusAlive" class="p-2"></ion-img>
+            }@else if(character.status === "Dead"){
+              <ion-img [src]="statusDead" class="p-2"></ion-img>
+            }@else if(character.status === "unknown"){
+              <ion-img [src]="statusUnknown" class="p-2"></ion-img>
+            }
+          </div>
+        </div>
+      </ion-card>
+    }
+  }
+
+</ion-content>

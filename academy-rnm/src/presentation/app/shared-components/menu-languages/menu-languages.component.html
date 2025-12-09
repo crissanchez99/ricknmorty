@@ -1,0 +1,24 @@
+<ion-menu contentId="menu-language">
+  <ion-header class="shadow-none">
+    <ion-toolbar class="border-gray-400">
+      <ion-menu-toggle>
+        <ion-icon name="menu" slot="start" color="dark"></ion-icon>
+      </ion-menu-toggle>
+      <ion-title class="text-black-title-rnm-and-title-card">{{'components_title.menu_language' | translate}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list class="bg-white">
+      @for (language of languages; track $index){
+        <ion-item (click)="changeLanguage(language.language)">
+          <ion-avatar>
+            <img src="{{language.img}}">
+          </ion-avatar>
+          <ion-label class="ml-4">{{language.translation | translate}}</ion-label>
+        </ion-item>
+      }
+    </ion-list>
+  </ion-content>
+
+</ion-menu>

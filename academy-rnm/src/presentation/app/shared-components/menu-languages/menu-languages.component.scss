@@ -1,0 +1,11 @@
+ion-avatar{
+  img{
+    @apply h-full
+  }
+}
+
+ion-item::part(native){
+  @apply bg-white;
+  @apply  text-black-title-rnm-and-title-card;
+}
+

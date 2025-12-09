@@ -1,0 +1,25 @@
+
+ion-list{
+  @apply bg-white;
+  @apply py-0;
+}
+
+ion-item{
+  @apply mx-0;
+}
+
+ion-item::part(native){
+  @apply bg-white;
+}
+
+ion-skeleton-text {
+  @apply rounded-full;
+  --background: rgba(46, 46, 46, 0.065);
+  --background-rgb: 46, 0, 46;
+}
+
+.image-charcter-skeleton{
+  @apply rounded-xl;
+}
+
+

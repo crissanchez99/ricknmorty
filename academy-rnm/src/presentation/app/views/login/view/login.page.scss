@@ -1,0 +1,9 @@
+.login-submit::part(native){
+  @apply bg-[rgb(100,141,219)];
+  @apply p-5;
+  @apply rounded-full;
+  @apply normal-case;
+  @apply font-semibold;
+  @apply font-sans;
+  @apply text-base;
+}

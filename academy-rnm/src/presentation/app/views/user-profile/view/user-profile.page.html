@@ -1,0 +1,25 @@
+<ion-header [translucent]="true" class="shadow-none">
+  <ion-toolbar>
+    <ion-title class="font-bold">{{'user_profile_page.page_title' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card class="bg-blue-500 h-[5.625rem] flex items-center">
+    <ion-avatar class="bg-white m-4">
+      <ion-img [src]="userImg" class="image-avatar"></ion-img>
+    </ion-avatar>
+      <ion-label class="font-semibold text-white">{{viewState.user().username}}</ion-label>
+      <ion-note slot="end"></ion-note>
+  </ion-card>
+  <ion-list [inset]="true">
+    <ion-item [button]="true">
+      <ion-icon name="person-circle" color="tertiary" slot="start"></ion-icon>
+      <div>
+        <ion-label class="font-semibold">{{'user_profile_page.profile_options.user_data.label' | translate}}</ion-label>
+      </div>
+      <div>
+        <ion-note slot="end">{{'user_profile_page.profile_options.user_data.note' | translate}}</ion-note>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

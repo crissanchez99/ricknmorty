@@ -1,0 +1,31 @@
+@for(skeleton of [].constructor(5); track $index){
+<ion-list>
+  <ion-item class="bg-white shadow-none my-0 mx-4" lines="none">
+    <div class="flex">
+      <div class="py-3 flex">
+        <ion-thumbnail slot="start" class="h-24 w-16">
+          <ion-skeleton-text [animated]="true" class="image-charcter-skeleton"></ion-skeleton-text>
+        </ion-thumbnail>
+        <div class="pl-4 w-64 content-center">
+          <ion-label>
+            <h3>
+              <ion-skeleton-text [animated]="true" class="w-3/5"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text [animated]="true" class="w-4/5"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text [animated]="true" class="w-2/6"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </div>
+      </div>
+        <div class="relative flex justify-center items-center mx-3">
+          <ion-thumbnail slot="start" class="w-3.5 h-3.5">
+            <ion-skeleton-text [animated]="true" class="image-charcter-skeleton"></ion-skeleton-text>
+          </ion-thumbnail>
+        </div>
+    </div>
+  </ion-item>
+</ion-list>
+}

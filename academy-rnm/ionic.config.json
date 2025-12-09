@@ -1,0 +1,7 @@
+{
+  "name": "academy-rnm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

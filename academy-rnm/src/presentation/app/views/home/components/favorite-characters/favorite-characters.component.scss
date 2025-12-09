@@ -1,0 +1,17 @@
+ion-item::part(native){
+  @apply bg-white;
+}
+
+p{
+  @apply text-black-title-rnm-and-title-card;
+}
+
+.name-character{
+  @apply text-lg;
+  @apply font-bold;
+  @apply my-0;
+}
+
+.image-character::part(image) {
+  @apply rounded-lg;
+}

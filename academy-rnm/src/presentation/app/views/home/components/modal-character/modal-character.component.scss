@@ -1,0 +1,12 @@
+.imgStatus::part(image){
+  @apply content-center;
+  @apply self-center;
+  @apply w-4;
+  @apply h-auto;
+}
+
+.button-favorite::part(native){
+  @apply bg-white;
+  @apply shadow-none;
+  @apply p-0;
+}

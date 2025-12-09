@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+    
+  <div class="flex justify-center pt-10">
+    <ion-img [src]="logo" class="w-3/5"></ion-img>
+  </div>
+
+  <div class="p-6">
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <ion-list class="bg-white">
+        <div class="mb-4">
+          <ion-label class="font-semibold text-black-title-rnm-and-title-card">{{'login_page_form.input_user_name.label_input_user_name' | translate}}</ion-label>
+          <ion-input class="input font-semibold text-[#6C6C6C]"
+            formControlName="userName"
+            type="text"
+            fill="outline"
+            shape="round"
+            labelPlacement="stacked"
+            [placeholder]="'login_page_form.input_user_name.placeholder_input_user_name' | translate"
+            [errorText]="'login_page_form.input_user_name.error_text_input_user_name' | translate"
+          ></ion-input>
+        </div>
+        
+        <div class="mb-4">
+          <ion-label class="font-semibold text-black-title-rnm-and-title-card">{{'login_page_form.input_password.label_input_password' | translate}}</ion-label>
+          <ion-input class="mb-8 input font-semibold text-[#6C6C6C]"
+            formControlName="password"
+            type="password" 
+            fill="outline"
+            shape="round"
+            labelPlacement="stacked"
+            [placeholder]="'login_page_form.input_password.placeholder_input_password' | translate"
+            [errorText]="'login_page_form.input_password.error_text_input_password' | translate"
+            password
+          ></ion-input>
+        </div>
+
+        <ion-button class="login-submit" expand="block" (click)="onSubmit()">{{'login_page_form.button_submit' | translate}}</ion-button>
+
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

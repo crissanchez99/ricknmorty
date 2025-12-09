@@ -1,0 +1,16 @@
+.image-character::part(image) {
+  @apply rounded-lg;
+}
+
+.imgStatus::part(image){
+  @apply content-center;
+  @apply self-center;
+  @apply w-4;
+  @apply h-auto;
+  @apply pl-0;
+}
+
+.fab::part(native){
+  @apply bg-white;
+}
+

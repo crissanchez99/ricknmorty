@@ -1,0 +1,56 @@
+{
+  "title_home_page": "Rick and Morty",
+  "searchbar_placeholder": "Search for characters, episodes...",
+  "title_characters": "Characters",
+  "character":{
+    "location": "Location",
+    "species": "Species",
+    "gender": "Gender",
+    "status": "Status",
+    "episode": "Episode"
+  },
+  "components_title.menu_language": "Languages",
+  "components_title_characters_favorites": "Favorites",
+  "languages": {
+    "es": "Spanish",
+    "en": "English"
+  },
+  "message_character_not_found": "Character not found",
+  "message_loading_characters": "Loading...",
+  "message_toast_update_character": "The character has been updated ",
+  "chip_all_characters": "All",
+  "close_modal_button": "Close",
+  "login_page_form":{
+    "input_user_name": {
+      "label_input_user_name": "Username",
+      "placeholder_input_user_name": "Enter your username",
+      "error_text_input_user_name": "Username invalid"
+    },
+    "input_password":{
+      "label_input_password": "Password",
+      "placeholder_input_password": "Enter your password",
+      "error_text_input_password": "Password invalid"
+    },
+    "button_submit": "Log in"
+  },
+  "login_page_alert": {
+    "alert":{
+      "header": "Warning",
+      "message": "Usernma and/or password incorrect",
+      "text_button": "OK"
+    }
+  },
+  "tabs":{
+    "title_home_tab": "Home",
+    "title_user_profile_tab": "Profile"
+  },
+  "user_profile_page":{
+    "page_title": "Profile",
+    "profile_options": {
+      "user_data": "My Account",
+      "biometric_auth": "Face ID /Toach ID",
+      "log_out": "Log out"
+    }
+  }
+  
+}
